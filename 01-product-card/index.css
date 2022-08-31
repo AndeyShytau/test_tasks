@@ -1,0 +1,158 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+.cards_title {
+    text-align: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    margin: 0 auto 0 auto;
+}
+
+.card {
+    width: 380px;
+    height: 482px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.card_photo {
+    background: url(card_photo.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 214px;
+}
+
+.card_font_family {
+    font-family: 'Arial';
+    font-style: normal;
+}
+
+.tag {
+    float: left;
+    color: #2F2F2F;
+    padding: 0px 16px;
+    margin: 16px 0px 0px 16px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.tag_new {
+    background: #FDCFF3;
+}
+
+.tag_last {
+    background: #FFCF56;
+}
+
+.product_name {
+    margin: 24px 24px 0px 24px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.product_description {
+    margin: 16px 24px 0px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button {
+    box-sizing: border-box;
+    margin: 24px;
+    position: absolute;
+    height: 48px;
+    bottom: 0px;
+    border-radius: 8px;
+    width: 332px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+    font-family: 'Arial';
+    font-style: normal;
+}
+
+.button_default {
+    color: #42940F;
+    border: 2px solid #42940F;
+}
+
+.button_disable {
+    border: 1px solid #4E4E4E;
+    color: #FFFFFF;
+    background: #4E4E4E;
+}
+
+.button_default:hover {
+    background: #42940F;
+    color: #FFFFFF;
+}
+
+.button_default:active {
+    background: #1F5200;
+    border: 2px solid #1F5200;
+    border-radius: 8px;
+}
+
+@media(max-width:524px) {
+    .cards_title {
+        font-size: 32px;
+        line-height: 56px;
+    }
+}
+
+@media(max-width:428px) {
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .card_photo {
+        height: 175px;
+    }
+
+    .product_name {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .product_description {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .button {
+        font-size: 16px;
+        line-height: 22px;
+        width: 252px;
+        height: 36px;
+    }
+
+    .tag {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width:360px) {
+    .cards_title {
+        font-size: 24px;
+        line-height: 48px;
+    }
+}
